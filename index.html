@@ -25,15 +25,22 @@
             <p v-if="seen">你现在看到了</p>
         </div> -->
 
-        <div id="app4">
+        <!-- <div id="app4">
             <ol>
                 <li v-for='todo in todos'>
                     {{todo.text}}
                 </li>
             </ol>
+        </div> -->
+        <!-- <div id="app5">
+            <p>{{ message }}</p>
+            <button v-on:click="reverseMessage">click</button>
+        </div> -->
+
+        <div id="app6">
+            <p>{{ message }}</p>
+            <input type="text" v-model="message">
         </div>
-
-
 
         <script src='index.js'></script>
     </body>
