@@ -6,41 +6,55 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>学习vue</title>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
-
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         
-        
-        <!-- <div id="app">
-            {{ message }}
-        </div> -->
+        <div id="app-all">
+            <div id="app">
+                {{ message }}
+            </div>
+    
+            <div id="app2">
+                <span v-bind:title="message">
+                    鼠标放在上面
+                </span>
+            </div>
+    
+            <div id="app3">
+                <p v-if="seen">你现在看到了</p>
+            </div>
+    
+            <div id="app4">
+                <ol>
+                    <li v-for='todo in todos'>
+                        {{todo.text}}
+                    </li>
+                </ol>
+            </div>
+            <div id="app5">
+                <p>{{ message }}</p>
+                <button v-on:click="reverseMessage">click</button>
+            </div>
+    
+            <div id="app6">
+                <p>{{ message }}</p>
+                <input type="text" v-model="message">
+            </div>
 
-        <!-- <div id="app2">
-            <span v-bind:title="message">
-                鼠标放在上面
-            </span>
-        </div> -->
+            <div id="app7">
+                <ol>
+                    <todo-list
+                        v-for='item in groceryList'
+                        v-bind:todo="item"
+                        v-bind:key="item.id">
+                    </todo-list>
+                </ol>
+            </div>
 
-        <!-- <div id="app3">
-            <p v-if="seen">你现在看到了</p>
-        </div> -->
 
-        <!-- <div id="app4">
-            <ol>
-                <li v-for='todo in todos'>
-                    {{todo.text}}
-                </li>
-            </ol>
-        </div> -->
-        <!-- <div id="app5">
-            <p>{{ message }}</p>
-            <button v-on:click="reverseMessage">click</button>
-        </div> -->
-
-        <div id="app6">
-            <p>{{ message }}</p>
-            <input type="text" v-model="message">
         </div>
+        
 
         <script src='index.js'></script>
     </body>

@@ -1,0 +1,13 @@
+#app-all{
+    border: 1px solid;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#app-all >div{
+    width: 300px;
+    height: 300px;
+    background: pink;
+    margin: 10px auto;
+}
