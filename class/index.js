@@ -10,8 +10,13 @@ var app = new Vue({
             {message:"tatadsxzfgbdfsgt"},
             {message:"tatasdfgh4er大风刮大风t"},
             {message:"tat山东分公司地方at"},
-            {message:"tat数人声鼎沸公司∂∂at"},
+            {message:"tat数人声鼎沸公sdfsdf司∂∂at"},
 
-        ]
+        ],
+        obj:{
+            a:'234',
+            b:'234',
+            c:'546456'
+        }
     }
 })

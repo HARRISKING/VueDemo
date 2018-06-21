@@ -10,8 +10,11 @@
 <body>
 
     <ul id="app">
-        <li v-for="(i,index) in is">
+        <li v-for="(i,index) of is">
             {{ i.message }} --- {{ index }} 
+        </li>
+        <li v-for="(i,idx,key) in obj">
+            {{ i }} --- {{idx}} --- {{key}}
         </li>
     </ul>
 
